@@ -8,7 +8,7 @@
 // [CONTOH] damageCalculation(3, 10) akan mengembalikan nilai 24
 //
 // Karena attack akan dikurangi 2, maka setiap attack akan menghasilkan damage 8
-
+//
 
 function attack (damage) {
   // Code disini
