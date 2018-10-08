@@ -1,5 +1,5 @@
 /*eslint-disable*/
-//TAQI A
+//TAQI
 function attack(damage) {
   return damage - 2;
 }
