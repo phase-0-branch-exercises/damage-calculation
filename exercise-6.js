@@ -1,5 +1,5 @@
 /**
- * exercise 5: Damage Calculation
+ * exercise 6: Damage Calculation
  * 
  */
 function attack (damage) {
