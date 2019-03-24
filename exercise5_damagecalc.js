@@ -3,7 +3,7 @@ function attack (damage) {
 }
 
 function damageCalculation (numberOfAttacks, damagePerAttack) {
-    return numberOfAttacks*(damagePerAttack-2)
+    return numberOfAttacks * attack(damagePerAttack)
 }
 
 // TEST CASE
