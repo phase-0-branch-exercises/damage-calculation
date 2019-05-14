@@ -1,27 +1,14 @@
-function meleeRangedGrouping (str) {
-    var splitStr = str.split(','),
-        ranged = [],
-        melee = [];
-    for (var i = 0; i<splitStr.length; i++){
-        splitStr[i] = splitStr[i].split('-')
-    }
+function attack (damage) {
+    return damage-2;
+}
 
-    for (var j =0; j<splitStr.length; j++){
-        if(splitStr[j][1] === 'Ranged'){
-            ranged.push(splitStr[j][0])
-        } else{
-            melee.push(splitStr[j][0]);
-        }
-    }
-    return [ranged, melee];
+function damageCalculation (numberOfAttacks, damagePerAttack) {
+  return numberOfAttacks*(attack(damagePerAttack));
 }
 
 // TEST CASE
+console.log(damageCalculation(9, 25)); // 207
 
-console.log(meleeRangedGrouping('Razor-Ranged,Invoker-Ranged,Meepo-Melee,Axe-Melee,Sniper-Ranged'));
-// [ ['Razor', 'Invoker', 'Sniper'], ['Meepo', 'Axe'] ]
+console.log(damageCalculation(10, 4)); // 20
 
-console.log(meleeRangedGrouping('Drow Ranger-Ranged,Chen-Ranged,Dazzle-Ranged,Io-Ranged'));
-// [ ['Drow Ranger', 'Chen', 'Dazzle', 'Io'], [] ]
-
-console.log(meleeRangedGrouping('')); // []
+console.log(damageCalculation(5, 20)); // 90
