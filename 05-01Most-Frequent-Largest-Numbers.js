@@ -1,9 +1,25 @@
 function sorting(arrNumber) {
-  // code di sini
+  for (let i = 0; i < arrNumber.length; i++) {
+    for (let j = i + 1; j < arrNumber.length; j++) {
+      if (arrNumber[i] < arrNumber[j]) {
+        let temp = arrNumber[i];
+        arrNumber[i] = arrNumber[j];
+        arrNumber[j] = temp;
+      }
+    }
+  }
+
+  return arrNumber;
 }
 
 function getTotal(arrNumber) {
-  // code di sini
+  let jumlah = 1;
+  for (let i = 1; i < arrNumber.length; i++) {
+    if (arrNumber[0] == arrNumber[i]) {
+      jumlah += 1;
+    }
+  }
+  return arrNumber.length == 0 ? '' : `angka paling besar adalah ${arrNumber[0]} dan jumlah kemunculan sebanyak ${jumlah} kali`;
 }
 
 function mostFrequentLargestNumbers(arrNumber) {
