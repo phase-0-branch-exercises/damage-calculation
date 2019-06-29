@@ -1,5 +1,12 @@
 function totalDigitRekursif(angka) {
-  // you can only write your code here!
+
+  if (angka <= 9) {
+    return angka;
+  } else if (angka > 9) {
+    let end = String(angka)[String(angka).length - 1];
+    return parseInt(end) + totalDigitRekursif(parseInt(angka/10));
+  }
+
 }
 
 // TEST CASES

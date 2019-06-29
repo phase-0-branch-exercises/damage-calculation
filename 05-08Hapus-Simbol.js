@@ -1,5 +1,5 @@
 function hapusSimbol(str) {
-  // you can only write your code here!
+  return str.replace(/[^\w]/g, '');
 }
 
 // TEST CASES
