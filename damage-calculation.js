@@ -17,7 +17,7 @@ function attack (damage) {
         return reduc + attack(damage -1)
     }
 }
-// console.log(attack(10))
+// console.log(attack(50))
 
 function damageCalculation (numberOfAttacks, damagePerAttack) {
     // Code disini
@@ -35,5 +35,5 @@ function damageCalculation (numberOfAttacks, damagePerAttack) {
   console.log(damageCalculation(10, 4)); // 20
     
   console.log(damageCalculation(5, 20)); // 90
-  console.log(damageCalculation(10, 45)); // 450
+  console.log(damageCalculation(10, 45)); // 430
 
