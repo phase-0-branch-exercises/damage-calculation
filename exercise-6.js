@@ -1,3 +1,5 @@
+// Ini exercise Damage Calculation untuk di submit sebagai exercise git branch Adrian-Adiguna-Soeranto
+
 function attack(damage) {
     // Code disini
     return damage - 2;
