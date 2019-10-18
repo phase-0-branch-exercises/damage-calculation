@@ -1,6 +1,8 @@
-//////////////////////////
-//  Git Branch
-//////////////////////////
+////////////////////////////////////////
+//                                    //
+//            IMPROVEMENT             //
+//                                    //
+////////////////////////////////////////
 
 function attack (damage) {
     return damage - 2;
@@ -8,7 +10,6 @@ function attack (damage) {
 
 function damageCalculation (numberOfAttacks, damagePerAttack) {
     return numberOfAttacks * attack(damagePerAttack);
-               //  9 * (25 - 2) = 207
 }
 
 // TEST CASE
