@@ -1,9 +1,13 @@
-function attack(damage) {
-  // Code disini
+function attack (damage) {
+  return damage-2;
 }
 
-function damageCalculation(numberOfAttacks, damagePerAttack) {
-  // Code disini
+function damageCalculation (numberOfAttacks, damagePerAttack) {
+  var totalDmg = 0;
+
+  for(var i = 0; i < numberOfAttacks; i++) totalDmg += attack(damagePerAttack);
+
+  return totalDmg;
 }
 
 // TEST CASE
