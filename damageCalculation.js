@@ -13,11 +13,7 @@ function attack (damage) {
 }
 
 function damageCalculation (numberOfAttacks, damagePerAttack) {
-  let totalDamage = 0
-  for(let i = 0; i < numberOfAttacks; i++){
-    totalDamage += attack(damagePerAttack);
-  }
-  return totalDamage
+  return numberOfAttacks*attack(damagePerAttack)
 }
 
 // TEST CASE
