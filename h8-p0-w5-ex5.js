@@ -1,5 +1,5 @@
 function attack(damage) {
-  // Code disini
+  //
   return damage - 2;
 }
 
