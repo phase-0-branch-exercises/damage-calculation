@@ -2,7 +2,7 @@
 
 function attack (damage) {
    return damage - 2
-}
+} 
 
 function damageCalculation (numberOfAttacks, damagePerAttack) {
     return numberOfAttacks * attack(damagePerAttack)
